@@ -26,6 +26,7 @@ struct msg_channel_st{
 /* 节目单上描述频道的内容的结构 */
 struct msg_listentry_st{
 	chnid_t chnid;
+	uint16_t len; // 这个结构体变量的长度，用字节表示
 	uint8_t desc[1];
 }__attribute__((packed));
 
